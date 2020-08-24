@@ -1,0 +1,24 @@
+
+<h3 style="background-color:darkkhaki; text-align: center; width: auto;">Employees Details </h3>
+<div class="container">
+<table class="table table-hover">
+       <thead>
+           <tr>
+                <th>ID</th><th>NAME</th><th>DESIGNATION</th><th>SALARY</th><th>EMAIL ID</th><th>Operations</th>
+            </tr>
+       </thead>
+       <tbody>
+        <tr *ngFor= "let user of users">
+            <td> {{user.id}} </td>
+            <td> {{user.name}}</td>
+            <td>{{user.desig}}</td>
+            <td> {{user.salary}}</td>
+            <td> {{user.emailId}}</td>
+            <td><a routerLink="/updateUser/{{user.id}}" class="btn btn-info">UPDATE</a>
+                <button (click)="deleteEmployee(user.id)" class="btn btn-danger">DELETE</button> </td>
+
+        </tr>
+    </tbody>
+</table>
+</div>
+

@@ -1,0 +1,23 @@
+<h3 style="background-color: darkkhaki; text-align: center; width: auto;">Add Employee</h3>
+<div class="container">
+    <!-- <form> -->
+        <label for="name">Name : </label>
+        <input class="form-control" type="text" [(ngModel)]="user.name" placeholder="Name " id="name"/>
+
+        <br/>
+        <label for="email">Email Id : </label>
+        <input class="form-control" type="text" [(ngModel)]="user.emailId" placeholder="Enter your email " id="email"/>
+
+        <br/>
+        <label for="desig">Designation : </label>
+        <input class="form-control" type="text" [(ngModel)]="user.desig" placeholder="Enter your Designation" id="desig"/>
+
+        <br/>
+        <label for="salary">Salary : </label>
+        <input class="form-control" type="number" [(ngModel)]="user.salary" placeholder="Enter your Salary " id="salary"/>
+
+        <br/>
+        <button class="btn btn-success" (click)="register()"> Save</button>
+     <!-- </form> -->
+
+</div>
